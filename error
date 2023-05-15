@@ -1,0 +1,37 @@
+SyntaxError - синтаксична помилка.
+print "hello"
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print("hello")?
+
+TabError - змішування у відступах табуляції та пробілів.
+a = int(input("Please enter an integer A: "))
+b = int(input("Please enter an integer B: "))
+if b > a:
+       print("B is greater than A")
+elif a == b:
+       print("A and B are equal")
+   else:
+       print("A is greater than B")
+
+NameError - виникає, якщо об’єкт не знайдено.
+age
+Traceback (most recent call last):
+File "<pyshell#6>", line 1, in <module>
+
+age
+NameError: name 'age' is not defined
+
+TypeError – операція застосована до об'єкта невідповідного типу.
+'2'+2
+Traceback (most recent call last):
+File "<pyshell#23>", line 1, in <module>
+
+'2'+2
+TypeError: must be str, not int
+
+ValueError - функція набуває аргументу правильного типу, але некоректного значення.
+int('xyz')
+Traceback (most recent call last):
+File "<pyshell#14>", line 1, in <module>
+
+int('xyz')
+ValueError: invalid literal for int() with base 10: 'xyz'
